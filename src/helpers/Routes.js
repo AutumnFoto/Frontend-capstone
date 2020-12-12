@@ -10,12 +10,12 @@ export default function Routes({ user }) {
         <Switch>
             <Route
             exact
-            path='/ '
+            path='/Home'
             component={() => <Home user={user} />}
             />
             <Route
             exact
-            path='/ profile'
+            path='/profile'
             component= {() => <Profile user={user} />}
             />
             <Route
