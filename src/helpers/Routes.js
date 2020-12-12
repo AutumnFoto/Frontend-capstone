@@ -1,25 +1,29 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../Views/Home';
+import Profile from '../Views/Profile';
+import Articles from '../Views/Articles';
+import NotFound from '../Views/NotFound';
 
 export default function Routes({ user }) {
   return (
         <Switch>
             <Route
             exact
-            path='/'
+            path='/ '
             component={() => <Home user={user} />}
             />
             <Route
             exact
-            path='/'
+            path='/ profile'
             component= {() => <Profile user={user} />}
             />
             <Route
             exact
-            path='/'
+            path='/articles'
             component= {() => <Articles user={user} />}
             />
+             <Route component={NotFound} />
         </Switch>
   );
 }

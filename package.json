@@ -43,6 +43,6 @@
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^4.0.0"
   }
 }
